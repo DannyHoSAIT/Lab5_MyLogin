@@ -10,9 +10,8 @@ import model.User;
 public class AccountService {
     
     public User login(String username, String password) {
-        if ((username.equals("adam") && password.equals("password")) || (username.equals("betty") && password.equals("password"))) {
-            String pass = null;
-            return new User(pass);
+        if ((username.equals("adam") || username.equals("betty"))  && password.equals("password")) {
+            return new User(username, null);
         }
         else {
             return null;

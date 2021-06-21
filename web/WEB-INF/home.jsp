@@ -18,7 +18,7 @@
             
             <h3>Hello ${username}</h3>
             
-            <a href="home?logout">Logout</a>
+            <a href="login?logout">Logout</a>
         </form>
         
     </body>
